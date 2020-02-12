@@ -43,7 +43,9 @@ let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
 let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 
 // Begin your solution here...
-
+canvas.drawShapesWithFill = true
+canvas.drawShapesWithBorder = false
+//Make background red
 
 /*:
  ## Use Source Control
