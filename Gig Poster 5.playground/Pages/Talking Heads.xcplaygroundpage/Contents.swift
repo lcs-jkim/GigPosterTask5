@@ -93,12 +93,16 @@ canvas.textColor = offWhite
 canvas.drawText(message: "talking heads", at: Point(x: 20, y: 145), size: 38, kerning: 1)
 
 // subtext #1
-canvas.drawText(message: "friday, saturday, sunday", at: Point(x: 20, y: 32), size: 10, kerning: 0)
-canvas.drawText(message: "september 12, 13, 14, 1974", at: Point(x: 20, y: 16), size: 10, kerning: 0)
+canvas.drawText(message: "friday, saturday, sunday", at: Point(x: 20, y: 32), size: 9, kerning: 0)
+canvas.drawText(message: "september 12, 13, 14, 1974", at: Point(x: 20, y: 16), size: 9, kerning: 0)
 
 // subtext #2
-canvas.drawText(message: "at cbgb and omfug", at: Point(x: 150, y: 32), size: 10, kerning: 0)
-canvas.drawText(message: "315 bowery, new york city", at: Point(x: 150, y: 16), size: 10, kerning: 0)
+canvas.drawText(message: "at cbgb and omfug", at: Point(x: 150, y: 32), size: 9, kerning: 0)
+canvas.drawText(message: "315 bowery, new york city", at: Point(x: 150, y: 16), size: 9, kerning: 0)
+
+// subtext #3
+canvas.drawText(message: "also appearing:", at: Point(x: 280, y: 32), size: 9, kerning: 0)
+canvas.drawText(message: "from brooklyn, the shirts", at: Point(x: 280, y: 16), size: 9, kerning: 0)
 /*:
  ## Use Source Control
  
