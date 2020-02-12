@@ -46,12 +46,12 @@ let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 canvas.drawShapesWithFill = true
 canvas.drawShapesWithBorders = false
 
-//Make background orange
+// Make background orange
 canvas.fillColor = deepOrange
 
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
-//Draw the yellow and grey triangle so I can overlay it with orange triangles
+// Draw the yellow and grey triangle so I can overlay it with orange triangles
 canvas.fillColor = brightYellow
 
 var TriangleVertices1: [Point] = []
@@ -61,7 +61,7 @@ TriangleVertices1.append(Point(x: 400, y: 200))
 
 canvas.drawCustomShape(with: TriangleVertices1)
 
-//Drawing the grey triangle
+// Drawing the grey triangle
 
 canvas.fillColor = offWhite
 
@@ -72,7 +72,7 @@ TriangleVertices2.append(Point(x: 0, y: 600))
 
 canvas.drawCustomShape(with: TriangleVertices2)
 
-//Define small triangles and make a loop to cover the top with orange triangles
+// Define small triangles and make a loop to cover the top with orange triangles
 canvas.fillColor = deepOrange
 
 for x in stride(from: 0, to: 400, by: 44.44) {
@@ -87,7 +87,18 @@ for x in stride(from: 0, to: 400, by: 44.44) {
     }
 }
 
+// Adding the title
+canvas.textColor = offWhite
 
+canvas.drawText(message: "talking heads", at: Point(x: 20, y: 145), size: 38, kerning: 1)
+
+// subtext #1
+canvas.drawText(message: "friday, saturday, sunday", at: Point(x: 20, y: 32), size: 10, kerning: 0)
+canvas.drawText(message: "september 12, 13, 14, 1974", at: Point(x: 20, y: 16), size: 10, kerning: 0)
+
+// subtext #2
+canvas.drawText(message: "at cbgb and omfug", at: Point(x: 150, y: 32), size: 10, kerning: 0)
+canvas.drawText(message: "315 bowery, new york city", at: Point(x: 150, y: 16), size: 10, kerning: 0)
 /*:
  ## Use Source Control
  
