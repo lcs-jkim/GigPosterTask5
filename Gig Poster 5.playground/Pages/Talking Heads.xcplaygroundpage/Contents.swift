@@ -75,13 +75,13 @@ canvas.drawCustomShape(with: TriangleVertices2)
 //Define small triangles and make a loop to cover the top with orange triangles
 canvas.fillColor = deepOrange
 
-for x in stride(from: 0, to: 400, by: 400/9.1) {
-    for y in stride(from: 200, to: 600, by: 400/9.1) {
+for x in stride(from: 0, to: 400, by: 44.4) {
+    for y in stride(from: 200, to: 600, by: 44.4) {
         
         var SmallTriangleVertices: [Point] = []
         SmallTriangleVertices.append(Point(x: x, y: y))
-        SmallTriangleVertices.append(Point(x: x + 400/9.1, y: y + 400/9.1))
-        SmallTriangleVertices.append(Point(x: x, y: y + 400/9.1))
+        SmallTriangleVertices.append(Point(x: x + 44.4, y: y + 44.4))
+        SmallTriangleVertices.append(Point(x: x, y: y + 44.4))
         
         canvas.drawCustomShape(with: SmallTriangleVertices)
     }
