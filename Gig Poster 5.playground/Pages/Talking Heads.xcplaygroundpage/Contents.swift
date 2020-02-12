@@ -44,9 +44,40 @@ let brightYellow = Color(hue: 46, saturation: 71, brightness: 98, alpha: 100)
 
 // Begin your solution here...
 canvas.drawShapesWithFill = true
-canvas.drawShapesWithBorder = false
-//Make background red
+canvas.drawShapesWithBorders = false
 
+//Make background orange
+canvas.fillColor = deepOrange
+
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
+//Draw the yellow and grey triangle so I can overlay it with orange triangles
+canvas.fillColor = brightYellow
+
+var TriangleVertices1: [Point] = []
+TriangleVertices1.append(Point(x: 0, y: 200))
+TriangleVertices1.append(Point(x: 400, y: 600))
+TriangleVertices1.append(Point(x: 400, y: 200))
+
+canvas.drawCustomShape(with: TriangleVertices1)
+
+//Drawing the grey triangle
+
+canvas.fillColor = offWhite
+
+var TriangleVertices2: [Point] = []
+TriangleVertices2.append(Point(x: 0, y: 200))
+TriangleVertices2.append(Point(x: 400, y: 600))
+TriangleVertices2.append(Point(x: 0, y: 600))
+
+canvas.drawCustomShape(with: TriangleVertices2)
+
+//Make a loop to cover the top with orange triangles
+
+var SmallTriangleVertices: [Point] = []
+SmallTriangleVertices.append(Point(x: 0, y: 200))
+SmallTriangleVertices.append(Point(x: 400, y: 600))
+SmallTriangleVertices.append(Point(x: 0, y: 600))
 /*:
  ## Use Source Control
  
